@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Object Methods</title>
+</head>
+<body>
+    <h2>Multiple Object Methods</h2>
+    <script>
+        let geometricShape={
+            circle:function(radius){
+                area=Number(2*3.14*radius);
+                perimeter=3.14*radius*radius;
+                console.log(`The area of circle is ${area}`);
+                console.log(`The perimeter of circle is ${perimeter}`);
+            },
+            rectangle:function(length, breadth){
+                area=length*breadth;
+                perimeter=2*(length+breadth);
+                console.log(`The area of rectangle is ${area}`);
+                console.log(`The perimeter of rectangle is ${perimeter}`);
+            },
+        }
+        geometricShape.circle(14);
+        geometricShape.rectangle(24, 13);
+    </script>
+</body>
+</html>

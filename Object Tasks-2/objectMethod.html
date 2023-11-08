@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <h2>Object Method</h2>
+    <script>
+        let book={
+            title:"Charlotte's Web",
+            author:"E.B.White",
+            pages:500,
+            }
+        let readTime=function(){
+           let readSpeed=50;
+           let totalWords=600;
+           return totalWords/readSpeed;
+        }
+        book.readTimes=readTime;
+        console.log(book.readTimes());
+    </script>
+</body>
+</html>

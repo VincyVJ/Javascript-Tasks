@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Clone Assign</title>
+</head>
+<body>
+    <h2>Program to clone a person detail using object cloning with assign.</h2>
+    <script>
+        let person={name:"Vincy",
+                    age:25,
+                    gender:"female",
+                };
+        let clone={};
+        Object.assign(clone, person);
+        console.log(person);
+        console.log(clone);
+    </script>
+</body>
+</html>
