@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Point Average</title>
+</head>
+<body>
+    <script>
+        let grade1=prompt("Enter the first student's letter grade","A");
+        let value1=0;
+            if(grade1=="A"){
+                value1=4.0;
+            }
+            else if(grade1=="B"){
+                value1=3.5;
+            }
+            else if(grade1=="C"){
+                value1=3.0;
+            }
+            else if(grade1=="D"){
+                value1=2.5;
+            }
+            else{
+                value1=2;
+            }
+        let hours1=prompt("Enter the first student's credit hours",1);
+        let grade2=prompt("Enter the first student's letter grade","A");
+        let value2=0;
+            if(grade2=="A"){
+                value2=4.0;
+            }
+            else if(grade2=="B"){
+                value2=3.5;
+            }
+            else if(grade2=="C"){
+                value2=3.0;
+            }
+            else if(grade2=="D"){
+                value2=2.5;
+            }
+            else{
+                value2=2;
+            }
+        let hours2=prompt("Enter the first student's credit hours",1);
+        let grade3=prompt("Enter the first student's letter grade","A");
+        let value3=0;
+            if(grade3=="A"){
+                value3=4.0;
+            }
+            else if(grade3=="B"){
+                value3=3.5;
+            }
+            else if(grade3=="C"){
+                value3=3.0;
+            }
+            else if(grade3=="D"){
+                value3=2.5;
+            }
+            else{
+                value3=2;
+            }
+        let hours3=prompt("Enter the first student's credit hours",1);
+        let grade4=prompt("Enter the first student's letter grade","A");
+        let value4=0;
+            if(grade4=="A"){
+                value4=4.0;
+            }
+            else if(grade4=="B"){
+                value2=3.5;
+            }
+            else if(grade4=="C"){
+                value2=3.0;
+            }
+            else if(grade4=="D"){
+                value4=2.5;
+            }
+            else{
+                value4=2;
+            }
+        let hours4=prompt("Enter the first student's credit hours",1);
+        let grade5=prompt("Enter the first student's letter grade","A");
+        let value5=0;
+            if(grade5=="A"){
+                value5=4.0;
+            }
+            else if(grade5=="B"){
+                value5=3.5;
+            }
+            else if(grade5=="C"){
+                value5=3.0;
+            }
+            else if(grade5=="D"){
+                value5=2.5;
+            }
+            else{
+                value5=2;
+            }
+        let hours5=prompt("Enter the first student's credit hours",1);
+        function calculateGPA(value1,hours1,value2,hours2,value3,hours3,value4,hours4,value5,value5){
+            let totalLetterGrade=value1+value2+value3+value4+value5;
+            let totalCreditHours=hours1+hours2+hours3+hours4+hours5;
+            let GPA=totalLetterGrade/totalCreditHours;
+            return `The GPA is ${GPA}`;
+        }
+        console.log(calculateGPA(value1,hours1,value2,hours2,value3,hours3,value4,hours4,value5,value5))
+    </script>
+</body>
+</html>

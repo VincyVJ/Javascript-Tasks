@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Price</title>
+</head>
+<body>
+    <h2>Calculate Final Price using Function Declaration</h2>
+    <script>
+        let originalPrice=prompt("Enter the original price",2000);
+        let discountPercent=prompt("Enter the discount percentage",5);
+        
+        function finalPrice(originalPrice, discountPercent){
+            let discount=originalPrice*discountPercent/100;
+            let price=originalPrice-discount;
+            return `The final price is Rs.${price}`;
+        }
+        console.log(finalPrice(originalPrice, discountPercent));
+    </script>
+</body>
+</html>

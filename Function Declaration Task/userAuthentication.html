@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authenticatio</title>
+</head>
+<body>
+    <h2>User Authentication Credentials</h2>
+    <script>
+        let userName1="Jack";
+        let password1=2435;
+        let userName2="Arun";
+        let password2=1234;
+        let userName3="John";
+        let password3=4567;
+        let user=prompt("Enter the user name","name");
+        let pwd=prompt("Enter the password",1234)
+        function userAuthentication(user, pwd, user1, pwd1, user2, pwd2, user3, pwd3){
+            let userDetails1=`UserName:${user1}
+                    Password:${pwd1}`;
+            let userDetails2=`UserName:${user2}
+                    Password:${pwd2}`;
+            let userDetails3=`UserName:${user3}
+                    Password:${pwd3}`;
+            switch(user){
+                case "Jack":
+                    if((user=="Jack")&&(pwd==2435))                       
+                    return userDetails1;
+                case "Arun":
+                    if((user=="Arun")&&(pwd==1234))                        
+                    return userDetails2;
+                case "John":
+                    if((user=="John")&&(pwd==4567))
+                    return userDetails3;
+                default:
+                    return 'Invalid User Details'
+            }
+        }
+        console.log(userAuthentication(user, pwd, userName1, password1, userName2, password2, userName3, password3));
+    </script>
+</body>
+</html>

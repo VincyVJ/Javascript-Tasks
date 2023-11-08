@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <script>
+        let unit=prompt("Enter the source unit","F");
+        let tempValue=prompt("Enter the temperature",45);
+        let celciusToFahrenheit=function(unit, value){
+            switch(unit){
+                case "C":
+                    let fahrenheit=((value*9)/5)+32;
+                    return `The Fahrenheit value is: ${fahrenheit}F`;
+                case "F":
+                    let celcius=((value-32)*5)/9;
+                    return `The Celcius value is: ${celcius}C`;
+                default:
+                    return 'Invalid Data';
+            }
+        }
+        console.log(celciusToFahrenheit(unit, tempValue));
+    </script>
+</body>
+</html>

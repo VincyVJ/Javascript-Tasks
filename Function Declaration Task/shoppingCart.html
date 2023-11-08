@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h2> a JavaScript function shoppingCart() 
+        that takes in a product name, price, and quantity 
+        as arguments and calculates the total cost of that product.</h2>
+    <script>
+        let productName=prompt("Enter the name of the product","Dell");
+        let price=prompt("Enter the price of the product",40000);
+        let num=prompt("Enter the quantity of the product",30);
+        function shoppingCart(productName, price, num){
+            let totalCost=price*num;
+            return `The total cost of ${num} ${productName} Laptops is Rs.${totalCost}`;
+        }
+
+        console.log(shoppingCart(productName, price, num));
+    </script>
+</body>
+</html>
