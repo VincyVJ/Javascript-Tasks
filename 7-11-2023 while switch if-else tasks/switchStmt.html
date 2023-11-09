@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <h2>Switch Statement - Greatest among Three numbers</h2>
+    <script>
+      let numOne = +prompt("Enter number - 1: ");
+      let numTwo = +prompt("Enter number - 2: ");
+      let numThree = +prompt("Enter number - 3: ");
+      console.log(`
+      ----------------------
+      Entered numbers are:
+      Number - 1 : ${numOne}
+      Number - 2 : ${numTwo}
+      Number - 3 : ${numThree}
+      ----------------------
+      `);
+      
+        let val=0;
+        if (numOne > numTwo && numOne > numThree) {
+        // 23 > 45 && 23 > 12
+        // false && true
+        // false
+        val=numOne;
+      } else if (numTwo > numOne && numTwo > numThree) {
+        // 45 > 23 && 45 > 12
+        // true && true
+        // true
+        val=numTwo;
+      } else{
+        // 45 > 23 && 45 > 12
+        // true && true
+        // true
+        val=numThree;
+      }
+      console.log(val);
+
+      switch(val){
+        case numOne:
+          console.log(`The number ${numOne} is the greatest`);
+          break;
+        case numTwo:
+          console.log(`The number ${numTwo} is the greatest`);
+          break;
+        case numThree:
+          console.log(`The number ${numThree} is the greatest`);
+          break;
+        default:
+          console.log("Invalid Data");
+      }
+    </script>
+</body>
+</html>

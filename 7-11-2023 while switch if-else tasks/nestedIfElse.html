@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested If Else</title>
+</head>
+<body>
+    <h2>Greatest among four numbers</h2>
+    <script>
+        // Greatest of three numbers
+      let numOne = +prompt("Enter number - 1: ");
+      let numTwo = +prompt("Enter number - 2: ");
+      let numThree = +prompt("Enter number - 3: ");
+      let numFour = +prompt("Enter number - 4: ");
+      console.log(`
+      ----------------------
+      Entered numbers are:
+      Number - 1 : ${numOne}
+      Number - 2 : ${numTwo}
+      Number - 3 : ${numThree}
+      Number - 4 : ${numFour}
+      ----------------------
+      `);
+
+    //   console.log(numOne > numTwo && numOne > numThree) && (numOne > numFour);
+
+      // 23, 45, 12
+      if ((numOne > numTwo && numOne > numThree) && numOne > numFour) {
+        // 23 > 45 && 23 > 12
+        // false && true
+        // false
+        console.log(`The number ${numOne} is largest`);
+      } else if ((numTwo > numOne && numTwo > numThree) && numTwo > numFour) {
+        // 45 > 23 && 45 > 12
+        // true && true
+        // true
+        console.log(`The number ${numTwo} is largest`);
+      } else if ((numThree > numOne && numThree > numTwo) && numThree > numFour) {
+        // 45 > 23 && 45 > 12
+        // true && true
+        // true
+        console.log(`The number ${numThree} is largest`);
+      } else {
+        console.log(`The number ${numFour} is largest`);
+      }
+      console.log("---------------");
+    </script>
+</body>
+</html>
